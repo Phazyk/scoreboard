@@ -20,8 +20,8 @@ st.page_link("scoreboard.py", label="⬅️ Retour au Score Board", icon="🏠")
 # ==========================================================
 with st.expander("Ajouter un(e) joueur/joueuse"):
     with st.form("nouveau_joueur", clear_on_submit=True):
-        nouveau_nom = st.text_input("Nom du/de la nouveau/nouvelle joueur/joueuse")
-        submitted = st.form_submit_button("➕ Ajouter la colonne")
+        nouveau_nom = st.text_input("Nom")
+        submitted = st.form_submit_button("➕ Ajouter la personne")
 
         if submitted:
             if not nouveau_nom:
